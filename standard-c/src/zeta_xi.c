@@ -4,11 +4,7 @@
  * See: https://github.com/einar-saukas/Zeta-Xi-Code
  */
 
-/* returns next bit (either 0 or 1) */
-int read_bit();
-
-/* writes next bit (either 0 or 1) */
-void write_bit(int bit);
+#include "zeta_xi.h"
 
 int decode_zeta_xi_interlaced(int factor, int order) {
     int i;
