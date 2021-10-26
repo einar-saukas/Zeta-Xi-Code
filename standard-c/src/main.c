@@ -11,11 +11,11 @@
 
 char *input = NULL;
 char *output = NULL;
-int index = 0;
+int input_index = 0;
 
 /* returns next bit (either 0 or 1) */
 int read_bit() {
-    return !input[index] || input[index++] != '0' ? 1 : 0;
+    return !input[input_index] || input[input_index++] != '0' ? 1 : 0;
 }
 
 /* writes next bit (either 0 or 1) */
