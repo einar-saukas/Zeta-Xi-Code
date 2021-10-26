@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
     command = to_char(argv[4]);
     input = argv[5];
 
-    if (factor < 1 || variant != 'c' && variant != 'i' || order < 0 || command != 'e' && command != 'd') {
+    if (factor < 1 || (variant != 'c' && variant != 'i') || order < 0 || (command != 'e' && command != 'd')) {
         fprintf(stderr, "Error: Invalid parameters\n");
         exit(1);
     }
